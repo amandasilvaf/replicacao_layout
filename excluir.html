@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Excluir Item</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+</head>
+<body>
+
+            <nav>
+                    <ul class="nav justify-content-end bg-dark"> <!--justify content end (Alinha à direita). Bg-dark (fundo preto) -->
+                        <li class="nav-item">
+                            <a class="nav-link text-secondary " href="listagem.html">Listar Produtos</a> <!--Text secondary: classe que dá ao texto a cor cinza-->
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-secondary " href="visualizar.html">Visualizar Clientes</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-secondary " href="cadastro.html">Cadastros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-secondary " href="dashboard.html">Ícones</a>
+                        </li>
+                      </ul>
+                </nav>
+
+               
+
+
+
+                <div class="container mt-5" id="tudo"> <!--defini um id 'tudo' para função JS de excluir-->
+                    <div class="mt-5 mb-3">
+                        <h2>Visualizar Item #1</h2>
+                    </div>
+                        <div class="row">
+                          <div class="col-sm">
+                                <p class="font-weight-bold">Campo um </p>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p> 
+                                <p class="font-weight-bold">Campo quatro </p> 
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <p class="font-weight-bold">Campo sete </p> 
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p> 
+                          </div>
+                          <div class="col-sm">
+                                <p class="font-weight-bold">Campo dois </p>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                                <p class="font-weight-bold">Campo cinco </p>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                                <p class="font-weight-bold">Campo oito </p>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                          </div>
+                          <div class="col-sm">
+                                <p class="font-weight-bold">Campo três </p>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                                <p class="font-weight-bold">Campo seis </p>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                                <p class="font-weight-bold">Campo nove </p>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                          </div>
+                          
+                        </div>
+                        <p class="font-weight-bold">Campo dez </p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores voluptas quasi accusantium voluptate nam maxime est aliquid consequuntur quae, illo perferendis hic necessitatibus, nostrum saepe voluptates harum nihil praesentium nobis.</p>
+                        <div>
+                                <button type="button" class="btn btn-primary" >Editar</button>
+                                <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#modalExemplo">Excluir</button>
+                                <div class="modal fade" id="modalExemplo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog" role="document">
+                                          <div class="modal-content">
+                                            <div class="modal-header">
+                                              <h5 class="modal-title" id="exampleModalLabel">Excluir item</h5>
+                                              <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                                                <span aria-hidden="true">&times;</span>
+                                              </button>
+                                            </div>
+                                            <div class="modal-body">
+                                              Realmente deseja excluir este item?
+                                            </div>
+                                            <div class="modal-footer">
+                                              <button type="button" class="btn btn-primary" id="botaoexcluir" data-dismiss="modal">Sim</button>
+                                              <button type="button" class="btn btn-ligth" data-dismiss="modal">Não</button>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+
+                                <button type="button" class="btn btn-light">Cancelar</button>
+                          </div>
+                    </div>
+
+       <script>
+
+         divTodas = document.getElementById('tudo'); //recebi a div que possui o id "tudo", na variável divTodas.
+
+         botao = document.getElementById('botaoexcluir'); //recebi o id 'botaoexcluir' (do modal Sim) na variável botao.
+
+          botao.onclick = function(){ //defini uma função onclick no botao (Executar determinada ação quando houver clique na variável 'botao').
+          divTodas.style.display = "none"; //defini style display:none; na divTodas(que engloba o conteúdo que está no id 'tudo') para omitir o conteúdo.
+          };
+      </script>
+      
+     
+      
+
+                    
+
+
+
+
+
+   
+    
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>    
+</body>
+</html>

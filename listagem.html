@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Listar Produtos</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+ 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+
+</head>
+<body>
+        
+        <nav>
+                <ul class="nav justify-content-end bg-dark"> <!--justify content end (Alinha à direita). Bg-dark (fundo preto) -->
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary " href="cadastro.html">Cadastros</a> <!--Text secondary: classe que dá ao texto a cor cinza-->
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-secondary " href="excluir.html">Excluir</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-secondary " href="listagem.html">Listar Produtos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary " href="visualizar.html">Visualizar Clientes</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-secondary " href="dashboard.html">Ícones</a>
+                  </li>
+
+                  </ul>
+        </nav>
+        
+    <div class="container-fluid"> <!-- div que engloba todo o código-->
+        <div>
+            <header>
+                    <div class="container-fluid mt-5 mb-5"> <!--mt (margim top) mb (margim bottom)-->
+                            <div class="d-flex flex-row justify-content-between" style="height: 40px;">
+                           
+                                <h3>Produtos</h3>
+                             
+                                <div class="col-8 d-flex justify-content-center ">
+                                      
+                                <div class="input-group mb-3">
+                                        <input type="text" class="form-control" placeholder="Digite sua pesquisa" aria-label="Pesquisa" aria-describedby="button-addon2">
+                                        <div class="input-group-append">
+                                          <button class="btn btn-outline-secondary" style="background-color: #007bff; color: #fff; " type="button" id="button-addon2"><i class="fas fa-search"></i></button>
+                                        </div>
+                                      </div>
+                                    </div>
+                              <div class="d-flex justify-content-end">
+                                    <button class="btn btn-primary" type="submit">Novo Produto</button>
+                              </div>
+                            </div>
+                        </div>
+
+            </header>
+        </div>
+
+
+
+
+
+
+
+        <table class="table text-muted"> <!-- text-muted: classe que dá esse efeito de cor ao texto.-->
+                <caption>Página 1 de 3, mostrando 8 registros de um total de 24, começando em 1, terminando em 8.</caption>
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Produto</th>
+                    <th scope="col">Valor</th>
+                    <th scope="col">Estoque</th>
+                    <th scope="col">Ações</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Escova Rotating Air Brush Titanium Connair</td>
+                    <td>R$ 450,00</td>
+                    <td>100</td>
+                    <td>
+                        <button type="button" class="btn btn-success">Visualizar</button>
+                        <button type="button" class="btn btn-warning">Editar</button>
+                        <button type="button" class="btn btn-danger">Excluir</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Depilador Elétrico Skip Braun Epil 9</td>
+                    <td>R$ 950,00</td>
+                    <td>100</td>
+                    <td>
+                        <button type="button" class="btn btn-success">Visualizar</button>
+                        <button type="button" class="btn btn-warning">Editar</button>
+                        <button type="button" class="btn btn-danger">Excluir</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Depilador Elétrico Skip Braun Epil 7</td>
+                    <td>R$ 730,00</td>
+                    <td>150</td>
+                    <td>
+                        <button type="button" class="btn btn-success">Visualizar</button>
+                        <button type="button" class="btn btn-warning">Editar</button>
+                        <button type="button" class="btn btn-danger">Excluir</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4</th>
+                    <td>Depilador Luz Pulsada I-ligth Pro Remington</td>
+                    <td>R$ 3.000,00</td>
+                    <td>50</td>
+                    <td>
+                        <button type="button" class="btn btn-success">Visualizar</button>
+                        <button type="button" class="btn btn-warning">Editar</button>
+                        <button type="button" class="btn btn-danger">Excluir</button>
+                    </td>
+                 </tr>
+                 <tr>
+                    <th scope="row">5</th>
+                    <td>Massageador Orbital Sculpitor Body</td>
+                    <td>R$ 130,00</td>
+                    <td>200</td>
+                    <td>
+                        <button type="button" class="btn btn-success">Visualizar</button>
+                        <button type="button" class="btn btn-warning">Editar</button>
+                        <button type="button" class="btn btn-danger">Excluir</button>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">6</th>
+                    <td>Cinta Modeladora Persona 3</td>
+                    <td>R$ 170,00</td>
+                    <td>300</td>
+                    <td>
+                        <button type="button" class="btn btn-success">Visualizar</button>
+                        <button type="button" class="btn btn-warning">Editar</button>
+                        <button type="button" class="btn btn-danger">Excluir</button>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">7</th>
+                    <td>Air Fryer Viva Philips Walita</td>
+                    <td>R$ 760,00</td>
+                    <td>400</td>
+                    <td>
+                        <button type="button" class="btn btn-success">Visualizar</button>
+                        <button type="button" class="btn btn-warning">Editar</button>
+                        <button type="button" class="btn btn-danger">Excluir</button>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">8</th>
+                    <td>Multiprocessador Multi Maker</td>
+                    <td>R$ 855,00</td>
+                    <td>400</td>
+                    <td>
+                        <button type="button" class="btn btn-success">Visualizar</button>
+                        <button type="button" class="btn btn-warning">Editar</button>
+                        <button type="button" class="btn btn-danger">Excluir</button>
+                    </td>
+                </tr>
+                
+                </tbody>
+              </table>
+
+              <div>
+                    <nav aria-label="Navegação de página exemplo">
+                            <ul class="pagination">
+                              <li class="page-item"><a class="page-link" href="#">Anterior </a></li>
+                              <li class="page-item"><a class="page-link" href="#">1</a></li>
+                              <li class="page-item"><a class="page-link" href="#">2</a></li>
+                              <li class="page-item"><a class="page-link" href="#">3</a></li>
+                              <li class="page-item"><a class="page-link" href="#">Próximo</a></li>
+                            </ul>
+                    </nav>
+            </div>
+
+        
+
+    
+      </div>
+    
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>    
+</body>
+</html>
